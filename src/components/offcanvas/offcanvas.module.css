@@ -1,0 +1,46 @@
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1040;
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.offcanvas-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.offcanvas-body {
+  height: 100vh;
+  padding: 1rem 1.2rem;
+}
+
+.offcanvas__wrapper {
+  width: 100%;
+}
+
+.offcanvas__btn_close {
+  background-color: var(--yellow-color);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
